@@ -14,4 +14,9 @@ This is my **neovim** working station that I'm using for software and notes.
 ---
 ## Snapshot
 ![neovim alacritty](screenshot.png)
-
+---
+## Bash colored prompt 
+```
+Bash prompt with unicode nerd font characters.
+```
+![prompt](prompt.png)
