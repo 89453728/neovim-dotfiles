@@ -44,11 +44,11 @@ color=("229;152;102" "234;227;225" "92;9;35" "26;36;33" "0;121;89")
 
 function prompt(){
     if ! [ -d ./.git ]; then
-        export PS1=$(c 1)"${rl}"$(c 3 1)" \u $(c 1 4)$tr \W $am $(date +'%a %b $am %H:%M %Z %Y '\
-            )"$(nc)$(c 4)"${rr}"$(nc)"\n$pr "
+        export PS1=╭─$(c 1)"${rl}"$(c 3 1)" \u $(c 1 4)$tr \W $am $(date +'%a %b $am %H:%M %Z %Y '\
+            )"$(nc)$(c 4)"${rr}"$(nc)"\n╰──$pr "
     else
-        export PS1=$(c 1)"${rl}"$(c 3 1)" \u $(c 1 4)$tr \W $am $(date +'%a %b $am %H:%M %Z %Y '$(c 4 1)'$tr'$(c 3)'  '\
-            )"$(nc)$(c 1)"${rr}"$(nc)"\n$pr "
+        export PS1=╭─$(c 1)"${rl}"$(c 3 1)" \u $(c 1 4)$tr \W $am $(date +'%a %b $am %H:%M %Z %Y '$(c 4 1)'$tr'$(c 3)'  '\
+            )"$(nc)$(c 1)"${rr}"$(nc)"\n╰──$pr "
     fi
 }
 
