@@ -1,10 +1,10 @@
 {
     "languageserver" : {
         "lua": {
-            "command" : "/home/muyahid/.local/share/lua-language-server/bin/lua-language-server",
+            "command" : "/home/user/.local/share/lua-language-server/bin/lua-language-server",
             "args": [
                 "-E",
-                "/home/muyahid/.local/share/lua-language-server/bin/main.lua"
+                "/home/user/.local/share/lua-language-server/bin/main.lua"
             ],
             "filetypes": ["lua"],
             "settings": {
