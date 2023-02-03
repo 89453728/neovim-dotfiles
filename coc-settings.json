@@ -21,6 +21,11 @@
                     }
                 }
             }
+        },
+        "vimlsp": {
+            "indexes": {
+                "projectRootPatterns": [".git","autoload",".github","plugin"]
+            }
         }
     },
     "sumneko-lua.enableNvimLuaDev": true

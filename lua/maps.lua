@@ -73,4 +73,35 @@ vim.keymap.set('n','<C-l>', function ()
     vim.api.nvim_exec(':NERDTreeToggle',false)
 end)
 
+if false then
+    -- Load configuration of vimspector.
+    local ok,res = pcall(function ()
+        loadfile('config/vimspector.lua','t')()
+    end)
+    if not ok then
+        print("** Error ** loading vimspector configuration in lua\n\n" .. res)
+    end
+end
+
+vim.api.nvim_exec([[
+" move split pages
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+" move split panes to left/bottom/top/right
+nnoremap <A-h> <C-W>H
+nnoremap <A-j> <C-W>J
+nnoremap <A-k> <C-W>K
+nnoremap <A-l> <C-W>L
+
+" move between panes to left/bottom/top/right
+nnoremap <A-left>   <C-w>h
+nnoremap <A-down>   <C-w>j
+nnoremap <A-up>     <C-w>k
+nnoremap <A-right>  <C-w>l
+]],false)
+
+vim.g['NERDTreeShowHidden'] = 1
 
